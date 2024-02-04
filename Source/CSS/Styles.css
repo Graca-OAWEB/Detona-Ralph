@@ -1,0 +1,93 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', system-ui, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../IMG/wall.jpg");
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #0a0000;
+    color: #b4adad;
+    border-bottom: 5px solid #ddce76;
+}
+
+.tittle {
+    color: #a52a2a;
+}
+
+.panel {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #0a0000;
+    background-color: #00ffff;
+
+}
+
+.enemy {
+    background-image: url(../IMG/enemy.jpg);
+    background-size: cover;
+}
+
+.menu-lives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .square {
+        height: 100px;
+        width: 100px;
+    }
+
+    .menu{
+        width: 100%;
+        height: auto;
+        padding: 1px;
+        margin: 0px;
+        justify-content:space-evenly;
+        align-items: center;
+        flex-shrink: 1;
+    
+    }
+
+   .tittle {
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+        width: 5vw;
+    }
+    .panel{
+        display: flex;
+        align-items: center;
+    }
+
+   }
